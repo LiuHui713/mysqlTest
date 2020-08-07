@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: root
+    password: '123456'
+    url: jdbc:mysql://localhost/test?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      #ddl-auto：定义数据表的生成策略
+      ddl-auto: update #更新或创建数据表
+    #在控制台显示sql（便于查看每次增删改查后数据库的变化）
+    show-sql: true
+#    open-in-view
